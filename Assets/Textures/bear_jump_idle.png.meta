@@ -226,7 +226,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bear_jump_idle_0: -8242943310202880413
+      bear_jump_idle_1: 1806433063728438889
+      bear_jump_idle_2: -2539949756902112132
+      bear_jump_idle_3: 5325137681970001605
+      bear_jump_idle_4: -3661341039788487200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
