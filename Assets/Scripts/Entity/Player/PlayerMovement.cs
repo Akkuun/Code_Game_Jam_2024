@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -84,7 +86,16 @@ public class PlayerMovement : MonoBehaviour
                 doubleJumpEnabled = true;
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                Instantiate(gravePrefab, new Vector3(transform.position.x + (transform.localScale.x > 0 ? 1f : -1f), transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
+                collectibleCounterRef = GameObject.Find("SoulCounterCanvas");
+                if (collectibleCounterRef != null)
+                {
+                    CollectibleCount counter = collectibleCounterRef.GetComponentInChildren<CollectibleCount>();
+                    if (counter.count > 0)
+                    {
+                        counter.decCount();
+                        Instantiate(gravePrefab, new Vector3(transform.position.x + (transform.localScale.x > 0 ? 1f : -1f), transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
+                    }
+                }
             }
         }
 
