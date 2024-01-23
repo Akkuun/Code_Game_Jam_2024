@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flocon_0: -2064045574660133381
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
