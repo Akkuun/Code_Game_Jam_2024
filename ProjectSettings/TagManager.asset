@@ -8,6 +8,7 @@ TagManager:
   - PointA
   - Invocation
   - Enemie
+  - DeathZone
   - HealthBar
   layers:
   - Default
