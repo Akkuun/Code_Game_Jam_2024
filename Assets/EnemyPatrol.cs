@@ -4,30 +4,48 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    public GameObject PointA;
-    public GameObject PointB;
+    public Transform PointA;
+    public Transform PointB;
     private Rigidbody2D rb;
 
-    private Transform currentPoint;
     public float speed;
+    
+    private Transform currentPoint;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentPoint = PointB.transform;
+        currentPoint = PointB;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 point = currentPoint.position - transform.position;
-        if(currentPoint == PointB.transform)
+        // Déplace l'ennemi vers la cible
+        transform.position = Vector3.MoveTowards(transform.position, currentPoint.position, speed *3 );
+
+        // Vérifie si l'ennemi a atteint la cible, puis change la cible
+        if (Vector3.Distance(transform.position, currentPoint.position) < 0.1f)
         {
-            rb.velocity = new Vector2(speed, 0);
+            ChangerCible();
+        }
+
+
+    }
+
+    void ChangerCible()
+    {
+        // Change la cible en fonction de la position actuelle
+        if (currentPoint == PointA)
+        {
+            currentPoint = PointB;
         }
         else
         {
-            rb.velocity = new Vector2(-speed, 0);
+            currentPoint = PointA;
         }
     }
+
+   
 }
