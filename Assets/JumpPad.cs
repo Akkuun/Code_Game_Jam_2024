@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class JumpPad : MonoBehaviour
 {
-    [SerializeField] float bouncePower = 20f;
+    [SerializeField] float bouncePower = 30f;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
