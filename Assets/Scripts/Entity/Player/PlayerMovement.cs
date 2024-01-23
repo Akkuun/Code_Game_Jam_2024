@@ -29,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpDuration = 0.4f;
     private Vector2 wallJumpPower = new Vector2(8f, 16f);
 
+    // Graveyard spawn system
+    public GameObject gravePrefab;
+
     [SerializeField] private Rigidbody2D rb; // Reference for player's rigidBody
     [SerializeField] private Transform groundCheck; // Position of player's foots
     [SerializeField] private LayerMask groundLayer; // Layer to collide and check for isGrounded
@@ -57,8 +60,13 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        if (IsGrounded() && !doubleJumpEnabled)
-            doubleJumpEnabled = true;
+        if (IsGrounded())
+        {
+            if (!doubleJumpEnabled)
+                doubleJumpEnabled = true;
+            if (Input.GetKeyDown(KeyCode.Q))
+                Instantiate(gravePrefab, new Vector3(transform.position.x + transform.localScale.x, transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && dashEnabled)
             StartCoroutine(Dash());
@@ -162,4 +170,5 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
         dashEnabled = true;
     }
+
 }
