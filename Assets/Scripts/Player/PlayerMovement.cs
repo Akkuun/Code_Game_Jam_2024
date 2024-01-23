@@ -69,7 +69,6 @@ public class PlayerMovement : MonoBehaviour
         else if(!IsGrounded())
             animator.SetBool("isJumping", true);
 
-        Debug.Log(rb.velocity.x);
         animator.SetBool("isMoving", (rb.velocity.x * rb.velocity.x) >= 0.1f);
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
