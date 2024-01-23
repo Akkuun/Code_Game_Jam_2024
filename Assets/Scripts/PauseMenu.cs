@@ -7,6 +7,8 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject pauseMenu;
+    public GameObject settings;
     
     void Update()
     {
@@ -31,5 +33,13 @@ public class PauseMenu : MonoBehaviour
     }
     public void LoadMenu(){
         SceneManager.LoadSceneAsync(0);
+    }
+    public void OpenSettings(){
+        pauseMenu.SetActive(false);
+        settings.SetActive(true);
+    }
+    public void returnPauseMenu(){
+        settings.SetActive(false);
+        pauseMenu.SetActive(true);
     }
 }
