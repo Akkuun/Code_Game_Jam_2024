@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 7a6bc694a37b09b4eac41258000e921f
+guid: 6bd0a611efdd0a14293ad404a63b336f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4805833863795286719
-    second: bear_idle_0
+      213: 223807415433601447
+    second: bear_run_0
   - first:
-      213: 1038121623308587437
-    second: bear_idle_1
+      213: 8524049023257026404
+    second: bear_run_1
   - first:
-      213: 4570525026778478440
-    second: bear_idle_2
+      213: 8519819762870255559
+    second: bear_run_2
   - first:
-      213: -4439284731545015701
-    second: bear_idle_3
+      213: 4928473061546004583
+    second: bear_run_3
+  - first:
+      213: -3255288883326112826
+    second: bear_run_4
+  - first:
+      213: -2672376530439282439
+    second: bear_run_5
+  - first:
+      213: -6613119514436969132
+    second: bear_run_6
+  - first:
+      213: -9113216415388757806
+    second: bear_run_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +69,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 64
@@ -105,24 +117,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bear_idle_0
+      name: bear_run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,14 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14d50f2309f3e4db0800000000000000
-      internalID: -4805833863795286719
+      spriteID: 7a1a40798af1b1300800000000000000
+      internalID: 223807415433601447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bear_idle_1
+      name: bear_run_1
       rect:
         serializedVersion: 2
         x: 0
@@ -157,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da1d5febd16286e00800000000000000
-      internalID: 1038121623308587437
+      spriteID: 46f104f9c618b4670800000000000000
+      internalID: 8524049023257026404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bear_idle_2
+      name: bear_run_2
       rect:
         serializedVersion: 2
         x: 0
@@ -178,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 867f922db44cd6f30800000000000000
-      internalID: 4570525026778478440
+      spriteID: 7cffb343fea7c3670800000000000000
+      internalID: 8519819762870255559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bear_idle_3
+      name: bear_run_3
       rect:
         serializedVersion: 2
         x: 0
@@ -199,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b6aa1779e0e7462c0800000000000000
-      internalID: -4439284731545015701
+      spriteID: 76018862324756440800000000000000
+      internalID: 4928473061546004583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bear_idle_4
+      name: bear_run_4
       rect:
         serializedVersion: 2
         x: 0
@@ -218,16 +217,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 656b8a6b601e1404ebbd40c48b0caafa
-      internalID: 158120118
+      spriteID: 6cba1140204e2d2d0800000000000000
+      internalID: -3255288883326112826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bear_idle_5
+      name: bear_run_5
       rect:
         serializedVersion: 2
         x: 0
@@ -239,16 +238,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 74203a914ed84d84d987118714522d9d
-      internalID: 1300901975
+      spriteID: 9f0631554bfc9ead0800000000000000
+      internalID: -2672376530439282439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bear_idle_6
+      name: bear_run_6
       rect:
         serializedVersion: 2
         x: 0
@@ -260,16 +259,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5669fd7a87c3d704fae78a404e456ad6
-      internalID: -1989610042
+      spriteID: 45dd7c4e6da7934a0800000000000000
+      internalID: -6613119514436969132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bear_idle_7
+      name: bear_run_7
       rect:
         serializedVersion: 2
         x: 0
@@ -281,10 +280,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9a9a14d319d689741ab2560c91fff19b
-      internalID: 1690628744
+      spriteID: 2d09e7f34f9578180800000000000000
+      internalID: -9113216415388757806
       vertices: []
       indices: 
       edges: []
@@ -292,7 +291,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 992c417fae9e9cc46b3fe7e373ee98bf
+    spriteID: 5599db5f8b6835a48bd3452dfbba5368
     internalID: 0
     vertices: []
     indices: 
@@ -300,14 +299,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bear_idle_0: -4805833863795286719
-      bear_idle_1: 1038121623308587437
-      bear_idle_2: 4570525026778478440
-      bear_idle_3: -4439284731545015701
-      bear_idle_4: 158120118
-      bear_idle_5: 1300901975
-      bear_idle_6: -1989610042
-      bear_idle_7: 1690628744
+      bear_run_0: 223807415433601447
+      bear_run_1: 8524049023257026404
+      bear_run_2: 8519819762870255559
+      bear_run_3: 4928473061546004583
+      bear_run_4: -3255288883326112826
+      bear_run_5: -2672376530439282439
+      bear_run_6: -6613119514436969132
+      bear_run_7: -9113216415388757806
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
