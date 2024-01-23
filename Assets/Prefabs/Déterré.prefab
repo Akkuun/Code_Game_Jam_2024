@@ -105,7 +105,7 @@ CapsuleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -165,5 +165,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8236debe01439e741bee0f05c8013c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRbRef: {fileID: 3632791774485983132, guid: a943856f0e95640459c5adbf5cbc724d, type: 3}
   rb: {fileID: 8633342482885448008}
