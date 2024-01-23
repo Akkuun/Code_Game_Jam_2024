@@ -1,5 +1,8 @@
+using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -31,6 +34,12 @@ public class PlayerMovement : MonoBehaviour
 
     // Graveyard spawn system
     public GameObject gravePrefab;
+    public GameObject collectibleCounterRef;
+
+    // Respawn System
+    public static int[] BigSoulsArray = new int[3];
+    public static int currentSoulNbr;
+    public int tmpSoulNbr;
 
     [SerializeField] private Rigidbody2D rb; // Reference for player's rigidBody
     [SerializeField] private Transform groundCheck; // Position of player's foots
@@ -39,6 +48,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform wallCheck; // Position of player's hand to grab walls
     [SerializeField] private LayerMask wallLayer; // Layer to collide and check if player is grabbing a wall
     [SerializeField] private Animator animator; // Animation component of the Player
+
+    private void Start()
+    {
+        tmpSoulNbr = currentSoulNbr;
+    }
 
     void Update()
     {
@@ -82,7 +96,19 @@ public class PlayerMovement : MonoBehaviour
             if (!doubleJumpEnabled)
                 doubleJumpEnabled = true;
             if (Input.GetKeyDown(KeyCode.Q))
-                Instantiate(gravePrefab, new Vector3(transform.position.x + (transform.localScale.x > 0 ? 1f : -1f), transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
+            {
+                collectibleCounterRef = GameObject.Find("SoulCounterCanvas");
+                if (collectibleCounterRef != null)
+                {
+                    CollectibleCount counter = collectibleCounterRef.GetComponentInChildren<CollectibleCount>();
+                    if (counter.count > 0)
+                    {
+                        counter.decCount();
+                        currentSoulNbr = counter.count;
+                        Instantiate(gravePrefab, new Vector3(transform.position.x + (transform.localScale.x > 0 ? 1f : -1f), transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
+                    }
+                }
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && dashEnabled)
@@ -101,7 +127,7 @@ public class PlayerMovement : MonoBehaviour
         if (isDashing)
             return;
         if (!isWallJumping)
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            rb.velocity = new Vector2((horizontal != 0f ? horizontal * speed : rb.velocity.x / 1.1f), rb.velocity.y);
     }
 
     private bool IsGrounded()
@@ -189,4 +215,13 @@ public class PlayerMovement : MonoBehaviour
         dashEnabled = true;
     }
 
+    // Death zone detection
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("DeathZone"))
+        {
+            currentSoulNbr = tmpSoulNbr;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
 }

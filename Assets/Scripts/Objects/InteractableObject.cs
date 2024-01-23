@@ -8,7 +8,7 @@ public class InteractableObject : CollidableObject
 
     protected override void OnCollide(GameObject collidedObject)
     {
-        Debug.Log("Collinding with " + collidedObject);
+        //Debug.Log("Collinding with " + collidedObject);
         if (Input.GetKeyDown(KeyCode.E))
         {
             OnInteract(collidedObject);
@@ -20,7 +20,7 @@ public class InteractableObject : CollidableObject
         if (!zInteracted)
         {
             zInteracted = true;
-            Debug.Log("Interact with " + name);
+            //Debug.Log("Interact with " + name);
         }
     }
 }

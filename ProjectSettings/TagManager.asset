@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DialogueBox
+  - PointA
+  - Invocation
+  - Enemie
+  - DeathZone
+  - HealthBar
   layers:
   - Default
   - TransparentFX
@@ -14,7 +20,7 @@ TagManager:
   - Ground
   - Wall
   - Player
-  - 
+  - Grave
   - 
   - 
   - 
