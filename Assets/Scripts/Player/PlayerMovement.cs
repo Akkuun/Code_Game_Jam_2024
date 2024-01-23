@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     // Dashing System
     private bool dashEnabled = true;
     private bool isDashing;
-    private float dashPower = 20f;
+    private float dashPower = 8f;
     private float dashTime = 0.2f;
     private float dashCooldown = 1f;
 
@@ -29,12 +29,15 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpDuration = 0.4f;
     private Vector2 wallJumpPower = new Vector2(8f, 16f);
 
+    
+
     [SerializeField] private Rigidbody2D rb; // Reference for player's rigidBody
     [SerializeField] private Transform groundCheck; // Position of player's foots
     [SerializeField] private LayerMask groundLayer; // Layer to collide and check for isGrounded
     [SerializeField] private TrailRenderer trailRenderer; // Reference to trail renderer   
     [SerializeField] private Transform wallCheck; // Position of player's hand to grab walls
     [SerializeField] private LayerMask wallLayer; // Layer to collide and check if player is grabbing a wall
+    [SerializeField] private Animator animator; // Animation component of the Player
 
     void Update()
     {
@@ -48,9 +51,26 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 if (!IsGrounded())
+                {
+                    if (doubleJumpEnabled)
+                    {
+                        animator.SetBool("isDoubleJumping", true);
+                    }
                     doubleJumpEnabled = false;
+                }
             }
         }
+
+        if (IsGrounded() && rb.velocity.y == 0f)
+        {
+            animator.SetBool("isJumping", false);
+            animator.SetBool("isDoubleJumping", false);
+        }
+        else if(!IsGrounded())
+            animator.SetBool("isJumping", true);
+
+        Debug.Log(rb.velocity.x);
+        animator.SetBool("isMoving", (rb.velocity.x * rb.velocity.x) >= 0.1f);
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
@@ -68,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (!isWallJumping)
             Flip();
+
     }
 
     private void FixedUpdate()
