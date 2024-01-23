@@ -36,8 +36,13 @@ public class EnemyBehavior : MonoBehaviour
         }
         else if (other.CompareTag("Player"))
         {
-            Debug.Log("Player touché");
-            // Appeler fonction pour faire baisser la vie du joueur
+            //Player touché, -10 HP
+            GameObject go = GameObject.FindGameObjectWithTag("HealthBar");
+            if (go != null) 
+            {
+                HealthBar healthBar = go.GetComponent<HealthBar>();
+                healthBar.Damage(10);
+            }
         }
         else if (other.CompareTag("Invocation"))
         {
