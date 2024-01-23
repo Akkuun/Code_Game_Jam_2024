@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -31,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Graveyard spawn system
     public GameObject gravePrefab;
+    public GameObject collectibleCounterRef;
 
     [SerializeField] private Rigidbody2D rb; // Reference for player's rigidBody
     [SerializeField] private Transform groundCheck; // Position of player's foots
@@ -82,7 +85,18 @@ public class PlayerMovement : MonoBehaviour
             if (!doubleJumpEnabled)
                 doubleJumpEnabled = true;
             if (Input.GetKeyDown(KeyCode.Q))
-                Instantiate(gravePrefab, new Vector3(transform.position.x + (transform.localScale.x > 0 ? 1f : -1f), transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
+            {
+                collectibleCounterRef = GameObject.Find("SoulCounterCanvas");
+                if (collectibleCounterRef != null)
+                {
+                    CollectibleCount counter = collectibleCounterRef.GetComponentInChildren<CollectibleCount>();
+                    if (counter.count > 0)
+                    {
+                        counter.decCount();
+                        Instantiate(gravePrefab, new Vector3(transform.position.x + (transform.localScale.x > 0 ? 1f : -1f), transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
+                    }
+                }
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && dashEnabled)
@@ -101,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
         if (isDashing)
             return;
         if (!isWallJumping)
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            rb.velocity = new Vector2((horizontal != 0f ? horizontal * speed : rb.velocity.x / 1.1f), rb.velocity.y);
     }
 
     private bool IsGrounded()

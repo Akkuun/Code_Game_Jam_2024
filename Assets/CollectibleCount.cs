@@ -5,7 +5,7 @@ using UnityEngine;
 public class CollectibleCount : MonoBehaviour
 {
     TMPro.TMP_Text text;
-    int count;
+    public int count;
     public float fixedXPosition = 0f;
     public float fixedYPosition = 10f;
     public float fixedZPosition = 0f;
@@ -29,5 +29,11 @@ public class CollectibleCount : MonoBehaviour
     void updatecount()
     {
         text.text = $"{count}";
+    }
+
+    public void decCount()
+    {
+        count--;
+        updatecount();
     }
 }
