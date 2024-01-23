@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1581715881646110283}
   - component: {fileID: 2252131898789165634}
   - component: {fileID: 4189641807763359994}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -175,16 +175,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12f24c1b3842d84aa7452223185d3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gravePrefab: {fileID: 8738383609204812953, guid: 71f0888ab37f3b94e96b5454ccb3320d, type: 3}
   rb: {fileID: 1312806856794537989}
   groundCheck: {fileID: 6727646431528985032}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   trailRenderer: {fileID: 2252131898789165634}
   wallCheck: {fileID: 4910942366637774521}
   wallLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 192
   animator: {fileID: 4189641807763359994}
 --- !u!96 &2252131898789165634
 TrailRenderer:
@@ -5252,7 +5253,7 @@ GameObject:
   - component: {fileID: 7095480154242759646}
   - component: {fileID: 8515255377761758271}
   - component: {fileID: 1127512800204125706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -5309,7 +5310,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.5630007
+  orthographic size: 7.4727817
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5504,7 +5505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6727646431528985032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5619,7 +5620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4910942366637774521}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

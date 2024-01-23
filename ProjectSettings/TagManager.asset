@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - DialogueBox
+  - PointA
+  - Invocation
+  - Enemie
   layers:
   - Default
   - TransparentFX
@@ -14,7 +17,7 @@ TagManager:
   - UI
   - Ground
   - Wall
-  - 
+  - Player
   - 
   - 
   - 
@@ -41,6 +44,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 775743329
+    locked: 0
+  - name: FrontBackground
+    uniqueID: 3827153229
     locked: 0
   - name: Default
     uniqueID: 0

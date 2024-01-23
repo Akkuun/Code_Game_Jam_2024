@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Thi-Desert.unity.meta
+guid: 805a1baf3875a9e4daf37b3f566d347f
+========
 guid: 7a3e993e7edb80c4b91cac6c1c13471a
 folderAsset: yes
+>>>>>>>> 6ba317dac116bebd1dc1a18bb597d34d68edb64f:Assets/Animation.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
