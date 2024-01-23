@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "CGJ 2024.sln"
+    "dotnet.defaultSolution": "Code_Game_Jam_2024.sln"
 }
