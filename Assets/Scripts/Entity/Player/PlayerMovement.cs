@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Graveyard spawn system
     public GameObject gravePrefab;
+    public GameObject collectibleCounterRef;
 
     [SerializeField] private Rigidbody2D rb; // Reference for player's rigidBody
     [SerializeField] private Transform groundCheck; // Position of player's foots
@@ -82,7 +83,9 @@ public class PlayerMovement : MonoBehaviour
             if (!doubleJumpEnabled)
                 doubleJumpEnabled = true;
             if (Input.GetKeyDown(KeyCode.Q))
+            {
                 Instantiate(gravePrefab, new Vector3(transform.position.x + (transform.localScale.x > 0 ? 1f : -1f), transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && dashEnabled)
