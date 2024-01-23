@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bear_idle_gif_0: 2444269785859767634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
