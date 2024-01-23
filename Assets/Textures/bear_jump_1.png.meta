@@ -178,7 +178,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bear_jump_1_0: -6041545072408514267
+      bear_jump_1_1: -8344320758751352304
+      bear_jump_1_2: 6677727149270144641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
