@@ -9,6 +9,7 @@ TagManager:
   - Invocation
   - Enemie
   - DeathZone
+  - HealthBar
   layers:
   - Default
   - TransparentFX
