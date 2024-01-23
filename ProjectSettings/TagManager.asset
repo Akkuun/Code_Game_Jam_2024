@@ -8,6 +8,7 @@ TagManager:
   - PointA
   - Invocation
   - Enemie
+  - HealthBar
   layers:
   - Default
   - TransparentFX
