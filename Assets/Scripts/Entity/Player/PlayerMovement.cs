@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
             if (!doubleJumpEnabled)
                 doubleJumpEnabled = true;
             if (Input.GetKeyDown(KeyCode.Q))
-                Instantiate(gravePrefab, new Vector3(transform.position.x + transform.localScale.x / transform.localScale.x, transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
+                Instantiate(gravePrefab, new Vector3(transform.position.x + (transform.localScale.x > 0 ? 1f : -1f), transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && dashEnabled)
