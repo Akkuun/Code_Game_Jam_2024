@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5272999115706290825}
   m_Layer: 0
   m_Name: "D\xE9terr\xE9"
-  m_TagString: Untagged
+  m_TagString: Invocation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
