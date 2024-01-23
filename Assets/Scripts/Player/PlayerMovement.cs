@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -9,13 +10,22 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     private bool doubleJumpEnabled = true;
 
+    // Dashing System
+    private bool dashEnabled = true;
+    private bool isDashing;
+    private float dashPower = 20f;
+    private float dashTime = 0.2f;
+    private float dashCooldown = 1f;
 
-    [SerializeField] private Rigidbody2D rb; // Ref for player's rigidBody
+    [SerializeField] private Rigidbody2D rb; // Reference for player's rigidBody
     [SerializeField] private Transform groundCheck; // Position of player's foots
     [SerializeField] private LayerMask groundLayer; // Layer to collide and check for isGrounded
+    [SerializeField] private TrailRenderer trailRenderer; // Reference to trail renderer   
 
     void Update()
     {
+        if (isDashing)
+            return;
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump"))
@@ -36,11 +46,16 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded() && !doubleJumpEnabled)
             doubleJumpEnabled = true;
 
+        if (Input.GetKeyDown(KeyCode.LeftShift) && dashEnabled)
+            StartCoroutine(Dash());
+
         Flip();
     }
 
     private void FixedUpdate()
     {
+        if (isDashing)
+            return;
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
@@ -58,5 +73,23 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+    // Dashing coroutine
+    private IEnumerator Dash()
+    {
+        dashEnabled = false;
+        isDashing = true;
+        float tmpGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(transform.localScale.x * dashPower, 0f);
+        trailRenderer.emitting = true;
+
+        yield return new WaitForSeconds(dashTime);
+        trailRenderer.emitting = false;
+        rb.gravityScale = tmpGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashCooldown);
+        dashEnabled = true;
     }
 }
