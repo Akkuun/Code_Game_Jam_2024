@@ -128,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
         if (isDashing)
             return;
         if (!isWallJumping)
-            rb.velocity = new Vector2((horizontal != 0f ? horizontal * speed : rb.velocity.x / 1.1f), rb.velocity.y);
+            rb.velocity = new Vector2((horizontal != 0f ? horizontal * speed : rb.velocity.x / 1.2f), rb.velocity.y);
     }
 
     private bool IsGrounded()
