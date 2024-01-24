@@ -21,11 +21,9 @@ public class EnemyBehavior : MonoBehaviour
 
         transform.Translate(Vector2.right * speed * Time.deltaTime);
         RaycastHit2D groundcheck = Physics2D.Raycast(groundDetect.position, Vector2.down, rayDist);
-        Debug.Log("eee");
 
         if (!groundcheck.collider)
         {
-            Debug.Log("collision");
             shouldChangeDirection = true;
         }
     }
