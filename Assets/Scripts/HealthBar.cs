@@ -6,14 +6,25 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;
+    public GameObject GameOverMenu;
     public void setHealth(float health)
     {
         slider.value = health;
+        if (health <= 0f)
+        {
+            GameOverMenu.SetActive(true);
+            Time.timeScale = 0f;
+        }
     }
 
     public void setHealth(int health)
     {
         slider.value = health;
+        if (health <= 0)
+        {
+            GameOverMenu.SetActive(true);
+            Time.timeScale = 0f;
+        }
     }
 
     public void Damage(int num)
