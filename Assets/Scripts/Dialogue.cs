@@ -24,7 +24,6 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-        Debug.Log(rectTransform.position);
     }
 
     void Update()
