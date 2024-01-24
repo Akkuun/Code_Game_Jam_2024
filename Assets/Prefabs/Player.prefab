@@ -177,6 +177,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravePrefab: {fileID: 8738383609204812953, guid: 71f0888ab37f3b94e96b5454ccb3320d, type: 3}
   collectibleCounterRef: {fileID: 8631823397655116495, guid: aca156a4585c538479374438000387c5, type: 3}
+  tmpSoulNbr: 0
+  GameOverMenu: {fileID: 0}
+  audio: {fileID: 0}
+  walk: {fileID: 0}
   rb: {fileID: 1312806856794537989}
   groundCheck: {fileID: 6727646431528985032}
   groundLayer:
@@ -5104,7 +5108,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 04b430607ec4de544ab7b7222c0eccdd, type: 2}
+  - {fileID: 2100000, guid: b2b454769037dfc4989cc25e014ca2d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5311,7 +5315,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.4727817
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10422,7 +10426,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 04b430607ec4de544ab7b7222c0eccdd, type: 2}
+  - {fileID: 2100000, guid: b2b454769037dfc4989cc25e014ca2d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
