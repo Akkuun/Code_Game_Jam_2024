@@ -5,11 +5,13 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     private float speed = 8f;
+    private bool isFacingRight = true;
     [SerializeField] private Rigidbody2D rb; // Reference for enemy's rigidBody
 
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<SpriteRenderer>().flipX = true;
         //transform.position = new Vector3(transform.position.x + (transform.localScale.x / 2) * playerRbRef.localScale.x, transform.position.y, transform.position.z);
     }
 
@@ -17,5 +19,23 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(speed * transform.localScale.x, rb.velocity.y);
+        if(rb.velocity.x* rb.velocity.x > 0.1f)
+        {
+            GetComponent<Animator>().SetBool("isMoving", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("isMoving", true);
+        }
+
+        if (rb.velocity.x > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+
+        if (rb.velocity.x < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
 }

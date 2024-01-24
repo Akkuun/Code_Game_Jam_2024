@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: fb312c49f92ead64c8c942a6a4de003f
+guid: ad21832b7a01f1a469be751c1ce7908f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3483574656620730349
-    second: New Piskel-1.png (2)_0
+      213: 7679083508794041174
+    second: cactus_0
+  - first:
+      213: -850843484704018319
+    second: cactus_1
+  - first:
+      213: 5155853601578384966
+    second: cactus_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,30 +102,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel-1.png (2)_0
+      name: cactus_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 0
-        width: 28
-        height: 12
+        y: 34
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +120,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 318619b7e4bd7afc0800000000000000
-      internalID: -3483574656620730349
+      spriteID: 653aa3604c5919a60800000000000000
+      internalID: 7679083508794041174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cactus_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 18
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170f2cecb523134f0800000000000000
+      internalID: -850843484704018319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cactus_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e7ff3a8854d8740800000000000000
+      internalID: 5155853601578384966
       vertices: []
       indices: 
       edges: []
@@ -144,7 +179,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      New Piskel-1.png (2)_0: -3483574656620730349
+      cactus_0: 7679083508794041174
+      cactus_1: -850843484704018319
+      cactus_2: 5155853601578384966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
