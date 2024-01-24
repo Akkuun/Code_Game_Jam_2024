@@ -688,6 +688,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2110302032049765643, guid: 461f5e68b3149044f831e8f3fa9c214e, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 6.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4887877783641884092, guid: 461f5e68b3149044f831e8f3fa9c214e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.26753736
@@ -1062,7 +1066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5583461879450632693, guid: a943856f0e95640459c5adbf5cbc724d, type: 3}
       propertyPath: orthographic size
-      value: 4.5630007
+      value: 6.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
