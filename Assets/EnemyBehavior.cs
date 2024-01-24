@@ -48,6 +48,8 @@ public class EnemyBehavior : MonoBehaviour
         {
             Debug.Log("Invocation touché");
             Destroy(gameObject);
+
+            Destroy(other.gameObject);
         }
     }
 
