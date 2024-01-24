@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BigSoulParticuleForest_0: -1808187226930140561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
