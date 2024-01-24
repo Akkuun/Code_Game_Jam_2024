@@ -24706,8 +24706,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: 'text.Array.data[13]'
-      value: "\xB0Merci ! Tu nous as sauv\xE9es ! C'est le seul vestige de nos 5
-        ans de mariage."
+      value: "\xB0Merci ! Tu nous as sauv\xE9s ! C'est le seul vestige de nos 5 ans
+        de mariage."
       objectReference: {fileID: 0}
     - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: m_LocalPosition.x

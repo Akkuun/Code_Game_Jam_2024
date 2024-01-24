@@ -31,7 +31,7 @@ public class PortailHUB : MonoBehaviour
             }
             else if (destination ==3)
             {
-                SceneManager.LoadScene("Thi");
+                SceneManager.LoadScene("Thi-Forest");
             }
             else if (destination == 0)
             {
