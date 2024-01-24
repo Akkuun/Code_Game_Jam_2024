@@ -40,7 +40,12 @@ public class PlayerMovement : MonoBehaviour
     public static bool[] BigSoulsArray = new bool[3];
     public static int currentSoulNbr;
     public int tmpSoulNbr;
-    public GameObject GameOverMenu; 
+    public GameObject GameOverMenu;
+
+    // Sound System
+    private float walkTimer = 0f;
+    public new AudioSource audio;
+    public AudioClip walk;
 
     [SerializeField] private Rigidbody2D rb; // Reference for player's rigidBody
     [SerializeField] private Transform groundCheck; // Position of player's foots
@@ -60,6 +65,12 @@ public class PlayerMovement : MonoBehaviour
         if (isDashing)
             return;
         horizontal = Input.GetAxisRaw("Horizontal");
+        if (horizontal != 0 && walkTimer <= 0 && IsGrounded())
+        {
+            footsteps();
+            walkTimer = 1.0f;
+
+        }
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -82,10 +93,29 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isJumping", false);
             animator.SetBool("isDoubleJumping", false);
         }
-        else if(!IsGrounded())
+        else if (!IsGrounded())
+        {
             animator.SetBool("isJumping", true);
+            stopFootsteps();
+            walkTimer = 0.0f;
+        }
 
-        animator.SetBool("isMoving", (rb.velocity.x * rb.velocity.x) >= 0.1f);
+
+
+        if ((rb.velocity.x * rb.velocity.x) >= 0.1f)
+        {
+
+
+            animator.SetBool("isMoving", true);
+            // footsteps();
+        }
+        else
+        {
+
+            animator.SetBool("isMoving", false);
+            stopFootsteps();
+            walkTimer = 0.0f;
+        }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
@@ -243,5 +273,18 @@ public class PlayerMovement : MonoBehaviour
     public void LoadScene(String sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    private void footsteps()
+    {
+        audio.clip = walk;
+        audio.Play();
+
+    }
+
+    private void stopFootsteps()
+    {
+        /* audio.clip = walk;*/
+        audio.Stop();
     }
 }
