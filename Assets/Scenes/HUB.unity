@@ -312,6 +312,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &194412871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3324931410035780923, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324931410035780923, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324931410035780923, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324931410035780923, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324931410035780923, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324931410035780923, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324931410035780923, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324931410035780923, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324931410035780923, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324931410035780923, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375158896520492649, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 501d78194cc209c42b8c0fa8ef291e65, type: 3}
+    - target: {fileID: 3375158896520492649, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 501d78194cc209c42b8c0fa8ef291e65, type: 3}
+    - target: {fileID: 4280971276845783463, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
+      propertyPath: m_Name
+      value: BackgroundMusic
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
 --- !u!1001 &289793535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -326,11 +391,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: text.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: 'text.Array.data[0]'
-      value: 
+      value: "\xB5La l\xE9gendaire Ga\xEFa, dieu et l\xE9gende de tous, a \xE9t\xE9
+        enferm\xE9e dans le grand portail des \xE2mes ! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[1]'
+      value: "\xB5Je suis le dernier n\xE9cromancien et le seul \xE0 pouvoir utiliser
+        les \xE2mes et sauver notre Dieu !  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[2]'
+      value: "\xB5Mais pour cela, il faut que je r\xE9cup\xE8re les \xE2mes gardiennes
+        du grand portail. Le chemin sera sem\xE9 d'embuches, mais j'y parviendrai
+        !"
       objectReference: {fileID: 0}
     - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10910,3 +10987,4 @@ SceneRoots:
   - {fileID: 1206874486}
   - {fileID: 459770558}
   - {fileID: 599477272}
+  - {fileID: 194412871}
