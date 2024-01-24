@@ -10,6 +10,7 @@ TagManager:
   - Enemie
   - DeathZone
   - HealthBar
+  - FinalDoor
   layers:
   - Default
   - TransparentFX
