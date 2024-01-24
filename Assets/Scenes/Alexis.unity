@@ -4104,6 +4104,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: HealthBar
       objectReference: {fileID: 0}
+    - target: {fileID: 9133616275984504308, guid: b446cde04a1af8946971368be81e78a8, type: 3}
+      propertyPath: speedScale
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
