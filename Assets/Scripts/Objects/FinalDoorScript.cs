@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinalDoorScript : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class FinalDoorScript : MonoBehaviour
     public GameObject forestOff;
     public GameObject ice;
     public GameObject iceOff;
+    public GameObject CameraFader;
 
     public GameObject portal;
     // Start is called before the first frame update
@@ -26,6 +28,12 @@ public class FinalDoorScript : MonoBehaviour
     {
         
     }
+    IEnumerator FadedLoadScene(string sceneName)
+    {
+        yield return new WaitForSeconds(2);
+
+        SceneManager.LoadScene(sceneName);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -39,6 +47,8 @@ public class FinalDoorScript : MonoBehaviour
             Destroy(forestOff);
             Destroy(ice);
             Destroy(iceOff);
+            CameraFader.GetComponent<CameraFader>().FadeIn();
+            StartCoroutine(FadedLoadScene("CreditsScene"));
         }
     }
 
