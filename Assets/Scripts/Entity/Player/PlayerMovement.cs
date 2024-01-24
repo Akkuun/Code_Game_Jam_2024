@@ -37,9 +37,10 @@ public class PlayerMovement : MonoBehaviour
     public GameObject collectibleCounterRef;
 
     // Respawn System
-    public static int[] BigSoulsArray = new int[3];
+    public static bool[] BigSoulsArray = new bool[3];
     public static int currentSoulNbr;
     public int tmpSoulNbr;
+    public GameObject GameOverMenu; 
 
     [SerializeField] private Rigidbody2D rb; // Reference for player's rigidBody
     [SerializeField] private Transform groundCheck; // Position of player's foots
@@ -221,7 +222,26 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("DeathZone"))
         {
             currentSoulNbr = tmpSoulNbr;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Death();
         }
+    }
+
+    private void Death()
+    {
+        currentSoulNbr = tmpSoulNbr;
+        GameOverMenu.SetActive(true);
+        Time.timeScale = 0f;
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void respawn()  
+    {
+        Time.timeScale = 1f;
+        LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void LoadScene(String sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
