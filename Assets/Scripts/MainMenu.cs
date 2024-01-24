@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject settings;
     public void PlayGame(){
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync("HUB");
     }
     public void Quit(){
 
