@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: babfb7b8961ddb145a91edf4a11ded73
+guid: 881d02b3673452943b07c613104fcdc7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1176747750368166271
-    second: BigSoulParticuleIce_0
+      213: 2955899630335881275
+    second: Oiseau_0
+  - first:
+      213: 7029094791068033497
+    second: Oiseau_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +103,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BigSoulParticuleIce_0
+      name: Oiseau_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30f0e18d07750920800000000000000
+      internalID: 2955899630335881275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oiseau_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1a822887c5c8160800000000000000
+      internalID: 7029094791068033497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oiseau_2
       rect:
         serializedVersion: 2
         x: 0
@@ -112,10 +157,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 18eb01dd72a5bafe0800000000000000
-      internalID: -1176747750368166271
+      spriteID: cfa9c396d106c3748a93ec36128ee827
+      internalID: -1768517232
       vertices: []
       indices: 
       edges: []
@@ -123,7 +168,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d959fe4234be59b4fabd18c492e389d3
     internalID: 0
     vertices: []
     indices: 
@@ -131,7 +176,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BigSoulParticuleIce_0: -1176747750368166271
+      Oiseau_0: 2955899630335881275
+      Oiseau_1: 7029094791068033497
+      Oiseau_2: -1768517232
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
