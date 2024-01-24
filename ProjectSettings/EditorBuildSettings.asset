@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Thi-Glace.unity
     guid: 7ac5329d95f96074bbb0259965bf4e8d
   - enabled: 1
-    path: Assets/Scenes/Thi.unity
+    path: Assets/Scenes/Thi-Forest.unity
     guid: 1623cb3c30fa7cd45999a9b5fb3d5f3d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
