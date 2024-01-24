@@ -34,12 +34,12 @@ public class EnemyMovement : MonoBehaviour
 
         if (rb.velocity.x > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            //GetComponent<SpriteRenderer>().flipX = true;
         }
 
         if (rb.velocity.x < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            GetComponent<SpriteRenderer>().flipY = true;
         }
     }
 }
