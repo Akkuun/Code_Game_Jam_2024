@@ -7,14 +7,16 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    public GameObject pauseMenu;
     public GameObject settings;
     
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)){
-            if (GameIsPaused){
+            if (GameIsPaused && !settings.activeSelf){
                 Resume();
+            }
+            else if(GameIsPaused && settings.activeSelf) {
+                returnPauseMenu();
             }
             else{
                 Pause();
@@ -35,11 +37,11 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(0);
     }
     public void OpenSettings(){
-        pauseMenu.SetActive(false);
+        pauseMenuUI.SetActive(false);
         settings.SetActive(true);
     }
     public void returnPauseMenu(){
         settings.SetActive(false);
-        pauseMenu.SetActive(true);
+        pauseMenuUI.SetActive(true);
     }
 }
