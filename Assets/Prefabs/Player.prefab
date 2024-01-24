@@ -177,6 +177,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravePrefab: {fileID: 8738383609204812953, guid: 71f0888ab37f3b94e96b5454ccb3320d, type: 3}
   collectibleCounterRef: {fileID: 8631823397655116495, guid: aca156a4585c538479374438000387c5, type: 3}
+  tmpSoulNbr: 0
+  GameOverMenu: {fileID: 4231493652408317493, guid: 5638751f1d58f4d44a7b3ddb92de0c56, type: 3}
   rb: {fileID: 1312806856794537989}
   groundCheck: {fileID: 6727646431528985032}
   groundLayer:
