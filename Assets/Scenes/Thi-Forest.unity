@@ -131,6 +131,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveSould (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: text.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[0]'
+      value: "\xB0C'est pas vrai ! Je le vois \xE0 ta t\xEAte, c'est le vieux qui
+        t'envoie ! Je ne veux pas rentrer moi !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[1]'
+      value: "\xB0Je suis bloqu\xE9 sur une \xE9nigme, mais si tu la r\xE9sous  je
+        rentrerai peut-\xEAtre."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[2]'
+      value: "\xB0Je ne respire jamais, mais j'ai beaucoup de souffle. Qui suis-je
+        ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[3]'
+      value: "\xB5... # un s\xE8che cheveux ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[4]'
+      value: "\xB0Oh, mais oui ! Merci pour ton aide ! Je n'y serais jamais arriv\xE9,
+        c'est vrai que \xE7a fait depuis bien longtemps  que je n'ai plus de cheveux
+        ! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[5]'
+      value: "\xB0Tu veux un secret ? \u2026 Ankou dans sa poche, il a toujours une
+        montre, bizarre pour une l\xE9gende hahaha"
+      objectReference: {fileID: 0}
     - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 64.216415
@@ -260,6 +294,23 @@ PrefabInstance:
     - target: {fileID: 2330659005768359282, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: m_Name
       value: GraveSould (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: text.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[0]'
+      value: "\xB0Te revoil\xE0 N\xE9cromancien !  Alors, est-ce que tu as parl\xE9
+        \xE0 toutes les \xE2mes ? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[1]'
+      value: "\xB0Voyons voir si tu les as bien \xE9cout\xE9 ? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[2]'
+      value: "\xB0Appuie sur E pour me raconter"
       objectReference: {fileID: 0}
     - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -644,63 +695,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &230443423
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2330659005768359282, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_Name
-      value: GraveSould (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 61.347324
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.308447
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.147172
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
 --- !u!1 &243852426
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +808,37 @@ PrefabInstance:
     - target: {fileID: 2330659005768359282, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: m_Name
       value: GraveSould
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: text.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[1]'
+      value: "\xB0Il n'y a pas de place ici pour toi, laisse les morts se reposer
+        !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[2]'
+      value: "\xB5L\xE9gendaire Ankou, je ne suis point l\xE0 pour r\xE9cup\xE9rer
+        les \xE2mes au repos.  Je vous en prie, laissez-moi passer...Ga\xEFa a besoin
+        de mon aide. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[3]'
+      value: "\xB0Comment puis-je te croire ? Tu ne fais que te moquer de nos lois
+        ! C'est dans ta nature ! Regarde toutes les \xE2mes que tu as d\xE9j\xE0
+        prises.  Cela ne te suffit donc pas ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[4]'
+      value: "\xB5J'ai chang\xE9, je ne souhaite que sauver Ga\xEFa ! Sans elle,
+        nous n'aurions plus de raison d'\xEAtre"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[5]'
+      value: "\xB0Tr\xE8s bien ! Si tu r\xE9ussis \xE0 aider toutes les \xE2mes qui
+        sont pr\xE9sentes, alors, j'y r\xE9fl\xE9chirai. Va !"
       objectReference: {fileID: 0}
     - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24613,6 +24638,73 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveSould (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: text.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[0]'
+      value: "\xB0Ch\xE9ri ! Ch\xE9ri !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[1]'
+      value: "\xA3Quoi encore !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[2]'
+      value: "\xB0Y'a quelqu'un qui est l\xE0 ! Il demande si on a besoin d'aide
+        !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[3]'
+      value: "\xA3Mais j'ai pas besoin d'aide, je vais la retrouver ma bague !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[4]'
+      value: "\xB0Mais ch\xE9ri, il a s\xFBrement de meilleurs yeux que toi ! Demande-lui
+        ! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[5]'
+      value: "\xB0(Il cherche sa bague qu'il a perdue... je lui ai dit que c'\xE9tait
+        pas grave, mais il y tient)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[6]'
+      value: "\xA3Oh, c'est bon ! Traite-moi de vieux aussi ! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[7]'
+      value: "\xA3T'as rien \xE0 faire le jeune ?! Viens l\xE0 ! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[8]'
+      value: "\xB5 ... # ici ? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[9]'
+      value: "\xA3 Tu l'as retrouv\xE9 ?!  Oh ** pleure** Petit, tu sais depuis combien
+        de temps, je suis avec cette folle ? 100 ans !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[10]'
+      value: "\xA3Dont 5 vivants, mais bon, c'\xE9tait assez court haha "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[11]'
+      value: "\xA3Merci, \xE7a repr\xE9sente beaucoup pour nous, m\xEAme si elle
+        dit que \xE7a la touche pas. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[12]'
+      value: "\xA3Je sais qu'elle \xE9tait triste\u2026 Apr\xE8s tout, \xE7a fait
+        depuis longtemps que je la connais."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[13]'
+      value: "\xB0Merci ! Tu nous as sauv\xE9es ! C'est le seul vestige de nos 5
+        ans de mariage."
+      objectReference: {fileID: 0}
     - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 71.89301
@@ -24791,6 +24883,29 @@ PrefabInstance:
     - target: {fileID: 2330659005768359282, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: m_Name
       value: GraveSould (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: text.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[0]'
+      value: "\xB0Pssst ! J'ai entendu ta conversation avec le l\xE9gendaire Ankou,
+        quel rabat-joie ! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[1]'
+      value: "\xB0Mais il semblerait qu'il t'ait demand\xE9 de nous aider"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[2]'
+      value: "\xB0\xC7a fait depuis un moment que je suis bloqu\xE9 ici, mais mon
+        fils lui peut aller n'importe o\xF9 ! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[3]'
+      value: "\xB0Si tu le vois dans ta qu\xEAte, dis-lui de me retrouver \xE0 la
+        troisi\xE8me tombe, d'accord ?!  Allez ! Courage !"
       objectReference: {fileID: 0}
     - target: {fileID: 6190965155552109405, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26561,7 +26676,6 @@ SceneRoots:
   - {fileID: 840481436}
   - {fileID: 323385946}
   - {fileID: 2007244715}
-  - {fileID: 230443423}
   - {fileID: 1925136989}
   - {fileID: 166575480}
   - {fileID: 47125926}
