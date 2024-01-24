@@ -334,7 +334,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 3916718644873153112, guid: d600a90729ee4fa42981f7227a3846eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -501,8 +501,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.04069999, y: 0.080550015, z: 0}
-    m_Extent: {x: 0.7674, y: 0.63975, z: 0}
+    m_Center: {x: 0.04090002, y: 0.07969999, z: 0}
+    m_Extent: {x: 0.7681, y: 0.6398, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1265,8 +1265,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.041150004, y: 0.08019999, z: 0}
-    m_Extent: {x: 0.76765, y: 0.63989997, z: 0}
+    m_Center: {x: 0.040199995, y: 0.07925001, z: 0}
+    m_Extent: {x: 0.7679, y: 0.63955, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
