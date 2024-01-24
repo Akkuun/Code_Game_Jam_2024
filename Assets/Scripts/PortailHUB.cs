@@ -45,8 +45,8 @@ public class PortailHUB : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-        ok = true;
+        if (other.CompareTag("Player"))
+            ok = true;
         
 
        
@@ -54,6 +54,7 @@ public class PortailHUB : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        ok = false;
+        if (collision.CompareTag("Player"))
+            ok = false;
     }
 }
