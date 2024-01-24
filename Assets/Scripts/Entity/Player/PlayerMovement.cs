@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject collectibleCounterRef;
 
     // Respawn System
-    public static int[] BigSoulsArray = new int[3];
+    public static bool[] BigSoulsArray = new bool[3];
     public static int currentSoulNbr;
     public int tmpSoulNbr;
     public GameObject GameOverMenu; 
