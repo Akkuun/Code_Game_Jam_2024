@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BigSoulParticuleIce_0: -1176747750368166271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
