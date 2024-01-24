@@ -1062,6 +1062,7 @@ MonoBehaviour:
   forestOff: {fileID: 118673164708203700}
   ice: {fileID: 6574126729897181540}
   iceOff: {fileID: 9072487465744634508}
+  CameraFader: {fileID: 3191258503222063055, guid: 06d1a629205bbae44bd3bf99111758de, type: 3}
   portal: {fileID: 2077847842890669919}
 --- !u!61 &6220270112561411829
 BoxCollider2D:
