@@ -922,11 +922,11 @@ PrefabInstance:
     - target: {fileID: 3375158896520492649, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: e2e5f3588ae21554784322d00f9de2e5, type: 3}
+      objectReference: {fileID: 8300000, guid: ee12f708d16280043b3989cb7f75ed9a, type: 3}
     - target: {fileID: 3375158896520492649, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: e2e5f3588ae21554784322d00f9de2e5, type: 3}
+      objectReference: {fileID: 8300000, guid: ee12f708d16280043b3989cb7f75ed9a, type: 3}
     - target: {fileID: 4280971276845783463, guid: 7c7975b14634d48449fec4ed3b87799b, type: 3}
       propertyPath: m_Name
       value: BackgroundMusic
