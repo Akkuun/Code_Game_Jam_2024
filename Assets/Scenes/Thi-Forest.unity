@@ -811,7 +811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: text.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: 'text.Array.data[1]'
@@ -827,16 +827,20 @@ PrefabInstance:
     - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: 'text.Array.data[3]'
       value: "\xB0Comment puis-je te croire ? Tu ne fais que te moquer de nos lois
-        ! C'est dans ta nature ! Regarde toutes les \xE2mes que tu as d\xE9j\xE0
-        prises.  Cela ne te suffit donc pas ?"
+        ! C'est dans ta nature !"
       objectReference: {fileID: 0}
     - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
       propertyPath: 'text.Array.data[4]'
+      value: "\xB0 Regarde toutes les \xE2mes que tu as d\xE9j\xE0 prises.  Cela
+        ne te suffit donc pas ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
+      propertyPath: 'text.Array.data[5]'
       value: "\xB5J'ai chang\xE9, je ne souhaite que sauver Ga\xEFa ! Sans elle,
         nous n'aurions plus de raison d'\xEAtre"
       objectReference: {fileID: 0}
     - target: {fileID: 4304910049402666655, guid: 9a20762b6c70fdf4ca60220856da852f, type: 3}
-      propertyPath: 'text.Array.data[5]'
+      propertyPath: 'text.Array.data[6]'
       value: "\xB0Tr\xE8s bien ! Si tu r\xE9ussis \xE0 aider toutes les \xE2mes qui
         sont pr\xE9sentes, alors, j'y r\xE9fl\xE9chirai. Va !"
       objectReference: {fileID: 0}
