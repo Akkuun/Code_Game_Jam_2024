@@ -371,8 +371,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.04125002, y: 0.07914999, z: 0}
-    m_Extent: {x: 0.76884997, y: 0.64014995, z: 0}
+    m_Center: {x: 0.041449994, y: 0.08014998, z: 0}
+    m_Extent: {x: 0.76804996, y: 0.63995004, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1626,8 +1626,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 2143721385}
+  fireOff: {fileID: 0}
   forest: {fileID: 1972254537}
+  forestOff: {fileID: 0}
   ice: {fileID: 1219269162}
+  iceOff: {fileID: 0}
+  CameraFader: {fileID: 1208588083}
   portal: {fileID: 0}
 --- !u!61 &901843266
 BoxCollider2D:
@@ -1818,6 +1822,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1208588083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4481938868058457212, guid: b446cde04a1af8946971368be81e78a8, type: 3}
+  m_PrefabInstance: {fileID: 5990928010745666303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1219269162
 GameObject:
   m_ObjectHideFlags: 0
@@ -3892,8 +3901,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.04100001, y: 0.0803, z: 0}
-    m_Extent: {x: 0.769, y: 0.63989997, z: 0}
+    m_Center: {x: 0.041499972, y: 0.0799, z: 0}
+    m_Extent: {x: 0.7676, y: 0.64059997, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4991,6 +5000,10 @@ PrefabInstance:
     - target: {fileID: 8900219904750227326, guid: b446cde04a1af8946971368be81e78a8, type: 3}
       propertyPath: m_TagString
       value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133616275984504308, guid: b446cde04a1af8946971368be81e78a8, type: 3}
+      propertyPath: speedScale
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
