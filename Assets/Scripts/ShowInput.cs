@@ -19,7 +19,7 @@ public class ShowInput : MonoBehaviour
     {
 
         
-        if (collide && Input.GetKeyDown(KeyCode.T))
+        if (collide && Input.GetKeyDown(KeyCode.E))
         {
            
             input.SetActive(true);
