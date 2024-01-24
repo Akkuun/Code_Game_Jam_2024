@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     private float speed = 8f;
+    private float lifetime = 5f;
     private bool isFacingRight = true;
     [SerializeField] private Rigidbody2D rb; // Reference for enemy's rigidBody
 
@@ -18,6 +19,9 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        lifetime -= Time.deltaTime;
+        if (lifetime <= 0)
+            Destroy(gameObject);
         rb.velocity = new Vector2(speed * transform.localScale.x, rb.velocity.y);
         if(rb.velocity.x* rb.velocity.x > 0.1f)
         {
