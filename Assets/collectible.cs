@@ -19,7 +19,7 @@ public class collectible : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             //Debug.Log("on rentre");
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
             onCollected?.Invoke();
         }
     }
