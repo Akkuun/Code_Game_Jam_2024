@@ -46,7 +46,8 @@ Hint for the 3rd world: For each discussion, enter a number in the bar (which ap
 
 
 
- Voici une vidéo de présentation du projet : 
+Vidéo de présentation du projet : 
+
 https://github.com/Akkuun/Code_Game_Jam_2024/assets/90316879/77cf2109-4f7b-4d1a-8b06-62c9ca88faf0
 
 Lien itch.io : https://byxis.itch.io/legends-souls
