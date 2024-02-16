@@ -10,9 +10,13 @@ Dans ce contexte nous avons créer un jeu 2D avec le moteur de jeu Unity.
 Membres de l'équipe :
 
 SERRANO Alexis : Graphic/Animation/Lighting Artist
+
 NGUYEN Thi-Christine:  Music/Sound Composer/ Narrative Designer
+
 DEURVEILHER Jean Louis : Gameplay Programmer
+
 DUBAN Mathis : Project Manager/Gameplay Programmer
+
 PINTA Sébastien : UI/UX Designer
 
 Voici le pitch de notre jeu : 
