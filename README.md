@@ -44,7 +44,7 @@ Hint for the 3rd world: For each discussion, enter a number in the bar (which ap
 
 ![image](https://github.com/Akkuun/Code_Game_Jam_2024/assets/90316879/bdeb6e0c-c533-4e8b-92a8-50daa833541d)
 
-
+Exécutable disponible dans l'onglet release.
 
 Vidéo de présentation du projet : 
 
