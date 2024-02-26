@@ -1,7 +1,7 @@
 # Code_Game_Jam_2024
 ![image](https://github.com/Akkuun/Code_Game_Jam_2024/assets/90316879/2a97fadd-601f-4967-b7dc-c499a876a61a)
 
-Dans le cadre de la Code Game Jam 2024 organisé par l'IUT de Montpellier, mon équipe et moi-même avons du créer un jeu from scratch en 36 heures sur un thème précis.
+Dans le cadre de la Code [Game Jam 2024](https://codegamejam.extragames.fr/editions-precedentes/edition-8-soon/#:~:text=La%20huiti%C3%A8me%20%C3%A9dition%20du%20concours,n'a%20pas%20encore%20commenc%C3%A9.) organisé par l'IUT de Montpellier, mon équipe et moi-même avons du créer un jeu from scratch en 36 heures sur un thème précis.
 Le thème de l'année était : Légendes étherées.
 
 Dans ce contexte nous avons créer un jeu 2D avec le moteur de jeu Unity.
