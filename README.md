@@ -30,6 +30,7 @@ Bon courage nécromancien !
 Indice pour le 3e monde : Vous devez entrer pour chaque discussion un chiffre dans la barre (qui apparait en appuyant sur E) et ainsi obtenir une combinaison ressemblant à 123.
 
 [EN]
+
 You play a Necromancer whose goal is to save the legend Gaia, trapped in the Great Portal of Souls.
 To free her, you must collect the great souls available in the 3 available worlds.
 To do this, you'll have to combine exploration, summoning the dead using inferior souls and puzzles.
