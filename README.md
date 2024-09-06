@@ -48,7 +48,7 @@ Hint for the 3rd world: For each discussion, enter a number in the bar (which ap
 
 Executable available in the release tab.
 
-Final ranking: 4th.
+Final ranking: 4/30<sup>th</sup>.
 
 Project presentation video: 
 
@@ -109,7 +109,7 @@ Indice pour le 3e monde : Vous devez entrer pour chaque discussion un chiffre da
 
 Exécutable disponible dans l'onglet release.
 
-Classement final : 4ième.
+Classement final : 4<sup>ième</sup>.
 
 Vidéo de présentation du projet : 
 
